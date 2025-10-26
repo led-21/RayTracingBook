@@ -1,28 +1,28 @@
 # RayTracingBook
 
-Este projeto é uma implementação prática baseada no livro clássico de Ray Tracing ("Ray Tracing in One Weekend" e seus volumes seguintes). Seguindo o passo a passo apresentado no livro, o objetivo é construir do zero um renderizador de imagens utilizando técnicas de ray tracing, aprimorando conceitos de computação gráfica e programação.
+This project is a practical implementation based on the classic "Ray Tracing in One Weekend" book series. Following the step-by-step approach presented in the books, the goal is to build an image renderer from scratch using ray tracing techniques, enhancing knowledge in computer graphics and programming.
 
-## Sumário
+## Table of Contents
 
-- [Sobre o Projeto](#sobre-o-projeto)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Como Executar](#como-executar)
-- [Referências](#referências)
+* [About the Project](#about-the-project)
+* [Project Structure](#project-structure)
+* [Technologies Used](#technologies-used)
+* [How to Run](#how-to-run)
+* [References](#references)
 
-## Sobre o Projeto
+## About the Project
 
-O projeto foi desenvolvido acompanhando o passo a passo do livro, implementando cada conceito e funcionalidade de forma incremental. Entre os principais tópicos abordados estão:
+The project was developed by following the book’s progression, implementing each concept and feature incrementally. Among the main topics covered are:
 
-- Geração de imagens simples com ray tracing.
-- Modelagem de cenas 3D com diferentes objetos geométricos.
-- Implementação de materiais (difusos, metálicos, dielétricos).
-- Adição de iluminação e técnicas de antialiasing.
-- Aperfeiçoamento do desempenho e recursos avançados.
+* Generating simple images with ray tracing.
+* Modeling 3D scenes with different geometric objects.
+* Implementing materials (diffuse, metallic, dielectric).
+* Adding lighting and antialiasing techniques.
+* Improving performance and implementing advanced features.
 
-## Estrutura do Projeto
+## Project Structure
 
-A estrutura segue a evolução proposta pelo livro, com cada capítulo representando uma etapa ou funcionalidade nova no código. Exemplos de diretórios e arquivos:
+The structure follows the evolution proposed by the book, with each chapter representing a new step or functionality in the code. Example of directories and files:
 
 ```
 ├── src/
@@ -32,45 +32,48 @@ A estrutura segue a evolução proposta pelo livro, com cada capítulo represent
 │   ├── hittable.h
 │   ├── sphere.h
 │   ├── camera.h
-│   └── ... (outros arquivos conforme evolução)
+│   └── ... (other files as the project evolves)
 ├── images/
-│   └── (resultados das renderizações)
+│   └── (rendered results)
 ├── README.md
 ```
 
-## Tecnologias Utilizadas
+## Technologies Used
 
-- **C++** (padrão C++11 ou superior): Linguagem principal para implementação dos algoritmos.
-- **Compilador GCC/Clang**: Para construção dos binários.
-- **Ferramentas de linha de comando**: Para execução e visualização dos resultados.
+* **C++** (C++11 or higher): Main programming language for algorithm implementation.
+* **GCC/Clang Compiler**: For building executables.
+* **Command-line tools**: For running and visualizing results.
 
-## Como Executar
+## How to Run
 
-1. Clone o repositório:
+1. Clone the repository:
+
    ```bash
    git clone https://github.com/led-21/RayTracingBook.git
    cd RayTracingBook
    ```
 
-2. Compile o projeto:
+2. Compile the project:
+
    ```bash
    cd src
    g++ main.cpp -o raytracer -std=c++11
    ```
 
-3. Execute o renderizador:
+3. Run the renderer:
+
    ```bash
    ./raytracer
    ```
 
-4. Os resultados serão salvos na pasta `images/` ou exibidos diretamente no terminal em formato PPM.
+4. The results will be saved in the `images/` folder or displayed directly in the terminal in PPM format.
 
-## Referências
+## References
 
-- [Ray Tracing in One Weekend (Peter Shirley)](https://raytracing.github.io/)
-- [Repositório Oficial dos Livros](https://github.com/RayTracing/raytracing.github.io)
-- Documentação C++: https://en.cppreference.com/
+* [Ray Tracing in One Weekend (Peter Shirley)](https://raytracing.github.io/)
+* [Official Book Repository](https://github.com/RayTracing/raytracing.github.io)
+* C++ Documentation: [https://en.cppreference.com/](https://en.cppreference.com/)
 
 ---
 
-Este projeto é ideal para quem deseja aprender os fundamentos de Ray Tracing, Computação Gráfica e aprimorar habilidades em C++.
+This project is ideal for those who want to learn the fundamentals of Ray Tracing and Computer Graphics while improving their C++ programming skills.
